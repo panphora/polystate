@@ -1,6 +1,32 @@
-<body class="menu-open">
-  <button data-click-to-toggle-class="menu-open">toggle</button>
-  <aside data-click-away-to-remove-class="menu-open" data-show-if=".menu-open">menu</aside>
-  <div data-hide-if=".menu-open">hide if menu open</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Polystate demo</title>
+  <meta name="description" content="Polystate demo">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <h1>Polystate Demos</h1>
+  <div class="demo">
+    <div class="demo__header-label">Demo 1</div>
+    <h2 class="demo__header">Sidebar Menu</h2>
+    <div class="demo__area">
+      <div class="sidebar-menu" data-show-if=".menu-open">
+        <button class="sidebar-menu__close" data-click-to-remove-class="menu-open">close</button>
+        <h3>Sidebar menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="demo__container">
+        <button data-click-to-toggle-class="menu-open">Toggle sidebar menu</button>
+      </div>
+    </div>
+  </div>
   <script src="../src/polystate.js"></script>
 </body>
+</html>
