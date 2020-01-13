@@ -75,7 +75,7 @@ import polystate from 'polystate';
 * `data-click-to-toggle-class="className selector(optional)"`
   * Toggles the `className` class on all elements that mtach `selector` (only when the current element is clicked)
 
-**Notes:** 
+**Notes** 
 
 * If `selector` isn't specified, Polystate will default to targeting the `<body>` element.
 * `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selector), or `[]` (for an attribute selector)
@@ -89,7 +89,9 @@ import polystate from 'polystate';
 * `data-click-away-to-toggle-class="className selector(optional)"`
   * Toggles the `className` class on all elements that mtach `selector` (only when an element that's not the current element is clicked)
 
-**Important:** A click away action will *NOT* trigger if there's a normal click action that affects the same `className` and `selector`
+**Important** 
+
+* A click away action will *NOT* trigger if there's a normal click action that affects the same `className` and `selector`
 
 ### Control visibility of elements
 
@@ -98,7 +100,9 @@ import polystate from 'polystate';
 * `data-hide-if="selector"`
   * hides element if it or any ancestor element matches the `selector`
 
-**Note:** The visibility styles that make these attributes work are generated automatically as soon as Polystate loads.
+**Notes** 
+
+* The visibility styles that make these attributes work are generated automatically as soon as Polystate loads.
 
 
 
