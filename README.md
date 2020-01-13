@@ -64,5 +64,21 @@ import polystate from 'polystate';
 
 [View Nav Menu Demo](https://codepen.io/panphora/pen/GRgGpZx)
 
-## Learn
+## Learn More
+
+#### Attributes that set & unset classes
+
+* data-click-to-add-class="className .selector(optional)"
+* data-click-away-to-add-class="className .selector(optional)"
+* data-click-to-remove-class="className .selector(optional)"
+* data-click-away-to-remove-class="className .selector(optional)"
+* data-click-to-toggle-class="className .selector(optional)"
+* data-click-away-to-toggle-class="className .selector(optional)"
+
+
+
+
+
+
+
 
