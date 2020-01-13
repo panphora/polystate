@@ -28,16 +28,16 @@ import polystate from 'polystate';
 
 ## Examples
 
-**Sidebar**
+#### Sidebar
 
 ```html
 <button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
 <aside data-click-away-to-remove-class="sidebar-open" data-show-if=".sidebar-open">sidebar content</aside>
 ```
 
-[View Sidebar Demo](https://codepen.io/panphora/pen/ZEYRbbE)
+**Demo:** [Sidebar Demo](https://codepen.io/panphora/pen/ZEYRbbE)
 
-**Tabs**
+#### Tabs
 ```html
 <button data-click-to-add-class="tab-1-active" data-click-to-remove-class="[tab-2-active,tab-3-active]">Tab 1</button>
 <button data-click-to-add-class="tab-2-active" data-click-to-remove-class="[tab-1-active,tab-3-active]">Tab 2</button>
@@ -47,9 +47,9 @@ import polystate from 'polystate';
 <div data-show-if=".tab-3-active">Content for the third tab.</div>
 ```
 
-[View Tabs Demo](https://codepen.io/panphora/pen/RwNJWWx)
+**Demo:** [Tabs Demo](https://codepen.io/panphora/pen/RwNJWWx)
 
-**Nav Menu**
+#### Nav Menu
 ```html
 <button data-click-to-toggle-class="nav-menu-open">Toggle Menu</button>
 <ul class="nav-menu__menu" data-click-away-to-remove-class="nav-menu-open" data-show-if=".nav-menu-open">
@@ -59,7 +59,7 @@ import polystate from 'polystate';
 </ul>
 ```
 
-[View Nav Menu Demo](https://codepen.io/panphora/pen/GRgGpZx)
+**Demo:** [Nav Menu Demo](https://codepen.io/panphora/pen/GRgGpZx)
 
 ## The Attributes
 
