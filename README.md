@@ -13,7 +13,7 @@ Much better than including a large framework for simple sites.
 Add this `<script>` tag just before your closing `</body>` tag.
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/panphora/polystate@v0.6.0/dist/polystate.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/panphora/polystate@v0.6.1/dist/polystate.min.js"></script>
 ```
 
 You can start using it right away!
@@ -36,6 +36,8 @@ import polystate from 'polystate';
 <button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
 <aside data-click-away-to-remove-class="sidebar-open" data-show-if=".sidebar-open">sidebar content</aside>
 ```
+
+[View Demo]()
 
 *Tabs*
 ```html
