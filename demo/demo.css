@@ -6,6 +6,7 @@
 
 body {
   padding: 2rem 0 0 0;
+  line-height: 1.5em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
@@ -64,6 +65,7 @@ h1 {
 }
 
 .demo {
+  margin-bottom: 1.5rem;
   padding: 1rem 0;
 }
 
@@ -95,7 +97,7 @@ h1 {
   background-color: #f1f3f5;
 }
 
-.sidebar-menu {
+.sidebar {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -107,13 +109,36 @@ h1 {
   background-color: #364fc7;
 }
 
-.sidebar-menu a {
+.sidebar a {
   color: #fff;
 }
 
-.sidebar-menu__close {
+.sidebar__close {
   position: absolute;
   top: .5rem;
   right: .5rem;
 }
+
+.tab-button {
+  margin-right: .5rem;
+}
+
+.tab-1-active .tab-1-button, .tab-2-active .tab-2-button, .tab-3-active .tab-3-button {
+  background-color: #be4bdb;
+}
+
+.tab-content {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f3d9fa;
+}
+
+
+
+
+
+
+
+
+
 

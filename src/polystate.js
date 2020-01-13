@@ -98,13 +98,20 @@
 
   function getActionDetailsFromElem (elem, selectorsList) {
     let matchingSelectors = getMatchingSelectors(elem, selectorsList);
-    return matchingSelectors.map(selector => {
+    return matchingSelectors.reduce((arr, selector) => {
       let attrName = selector.replace(/^\[+|\]+$/g, "");
       let attrValue = elem.getAttribute(attrName);
       let actionArgs = getArgsFromString(attrValue);
       let actionFunc = actionFunctionLookup[selector];
-      return {elem, selector, attrName, attrValue, actionArgs, actionFunc};
-    });
+      if (Array.isArray(actionArgs)) {
+        actionArgs.forEach(args => {
+          arr.push({elem, selector, attrName, attrValue, actionArgs: args, actionFunc});
+        });
+      } else {
+        arr.push({elem, selector, attrName, attrValue, actionArgs, actionFunc});
+      }
+      return arr;
+    }, []);
   }
 
   function getAllClickAwayActions (clickedElem, clickActions) {
@@ -144,10 +151,19 @@
 
   function getArgsFromString (str) {
     let args = str.split(" ");
+    
     if (args.length === 1) {
       args.push("body");
     }
+
     let [className, selector] = args;
+    
+    if (className.startsWith("[") || selector.startsWith("[")) {
+      let classNames = className.replace(/\s/, "").replace(/^\[+|\]+$/g, "").split(",");
+      let selectors = selector.replace(/\s/, "").replace(/^\[+|\]+$/g, "").split(",");
+      return classNames.map((c, index) => ({className: c, selector: selectors[index] || "body"}));
+    }
+
     return {selector, className};
   }
 

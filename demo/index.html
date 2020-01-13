@@ -6,15 +6,15 @@
   <meta name="description" content="Polystate demo">
   <link rel="stylesheet" href="demo.css">
 </head>
-<body>
+<body class="tab-1-active">
   <h1>Polystate Demos</h1>
   <div class="demo">
     <div class="demo__header-label">Demo 1</div>
-    <h2 class="demo__header">Sidebar Menu</h2>
+    <h2 class="demo__header">Sidebar</h2>
     <div class="demo__area">
-      <div class="sidebar-menu" data-show-if=".menu-open">
-        <button class="sidebar-menu__close" data-click-to-remove-class="menu-open">close</button>
-        <h3>Sidebar menu</h3>
+      <div class="sidebar" data-show-if=".sidebar-open">
+        <button class="sidebar__close" data-click-to-remove-class="sidebar-open">close</button>
+        <h3>Menu</h3>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
@@ -23,7 +23,21 @@
         </ul>
       </div>
       <div class="demo__container">
-        <button data-click-to-toggle-class="menu-open">Toggle sidebar menu</button>
+        <button data-click-to-toggle-class="sidebar-open">Toggle sidebar</button>
+      </div>
+    </div>
+  </div>
+  <div class="demo">
+    <div class="demo__header-label">Demo 2</div>
+    <h2 class="demo__header">Tabs</h2>
+    <div class="demo__area">
+      <div class="demo__container">
+        <button class="tab-button tab-1-button" data-click-to-add-class="tab-1-active" data-click-to-remove-class="[tab-2-active,tab-3-active]">Tab 1</button>
+        <button class="tab-button tab-2-button" data-click-to-add-class="tab-2-active" data-click-to-remove-class="[tab-1-active,tab-3-active]">Tab 2</button>
+        <button class="tab-button tab-3-button" data-click-to-add-class="tab-3-active" data-click-to-remove-class="[tab-1-active,tab-2-active]">Tab 3</button>
+        <div class="tab-content" data-show-if=".tab-1-active">Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. Content for the first tab. </div>
+        <div class="tab-content" data-show-if=".tab-2-active">Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. Content for the second tab. </div>
+        <div class="tab-content" data-show-if=".tab-3-active">Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. Content for the third tab. </div>
       </div>
     </div>
   </div>
