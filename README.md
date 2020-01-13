@@ -35,7 +35,7 @@ import polystate from 'polystate';
 <aside data-click-away-to-remove-class="sidebar-open" data-show-if=".sidebar-open">sidebar content</aside>
 ```
 
-*Demo:* [Sidebar Demo](https://codepen.io/panphora/pen/ZEYRbbE)
+*Demo:* [Sidebar on Codepen](https://codepen.io/panphora/pen/ZEYRbbE)
 
 #### Tabs
 ```html
@@ -47,7 +47,7 @@ import polystate from 'polystate';
 <div data-show-if=".tab-3-active">Content for the third tab.</div>
 ```
 
-*Demo:* [Tabs Demo](https://codepen.io/panphora/pen/RwNJWWx)
+*Demo:* [Tabs on Codepen](https://codepen.io/panphora/pen/RwNJWWx)
 
 #### Nav Menu
 ```html
@@ -59,7 +59,7 @@ import polystate from 'polystate';
 </ul>
 ```
 
-*Demo:* [Nav Menu Demo](https://codepen.io/panphora/pen/GRgGpZx)
+*Demo:* [Nav Menu on Codepen](https://codepen.io/panphora/pen/GRgGpZx)
 
 ## The Attributes
 
