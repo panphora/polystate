@@ -2,45 +2,60 @@
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/polystate)
 
-Polystate lets you set and unset classes in your DOM with the click of a button. Much simpler than using vanilla JS or a full JS framework.
+Polystate lets you set and unset CSS classes on any element with a click.
 
-Perfect for static sites & server-rendered apps.
+Much better than including a large framework for simple sites.
 
 ## Install
 
-**From CDN:** Add the following script to the end of your `<head>` section.
+**Load from CDN:** 
+
+Add this `<script>` tag just before your closing `</body>` tag.
+
 ```html
 <script src="https://cdn.jsdelivr.net/gh/panphora/polystate@v0.6.0/dist/polystate.min.js" defer></script>
 ```
 
-That's it. It will initialize itself.
+You can start using it right away!
 
-**From NPM:** Install the package from NPM.
+**Install from NPM:** (Alternative) 
+
 ```js
 npm i polystate
 ```
 
 Include it in your script.
 ```js
-import polystate from 'polystate'
+import polystate from 'polystate';
 ```
 
 ## Use
 
-*Menu*
+*Sidebar*
 ```html
-<body>
-  <button data-click-to-toggle-class="menu-open">toggle</button>
-  <aside data-click-away-to-remove-class="menu-open" data-show-if=".menu-open">menu</aside>
-  <div data-hide-if=".menu-open">hide if menu open</div>
-</body>
+<button data-click-to-toggle-class="sidebar-open">toggle sidebar</button>
+<aside data-click-away-to-remove-class="sidebar-open" data-show-if=".sidebar-open">sidebar content</aside>
 ```
 
 *Tabs*
 ```html
-
+<button data-click-to-add-class="tab-1-active" data-click-to-remove-class="[tab-2-active,tab-3-active]">Tab 1</button>
+<button data-click-to-add-class="tab-2-active" data-click-to-remove-class="[tab-1-active,tab-3-active]">Tab 2</button>
+<button data-click-to-add-class="tab-3-active" data-click-to-remove-class="[tab-1-active,tab-2-active]">Tab 3</button>
+<div data-show-if=".tab-1-active">Content for the first tab.</div>
+<div data-show-if=".tab-2-active">Content for the second tab.</div>
+<div data-show-if=".tab-3-active">Content for the third tab.</div>
 ```
 
+*Nav Menu*
+```html
+<button data-click-to-toggle-class="nav-menu-open">Toggle Menu</button>
+<ul class="nav-menu__menu" data-click-away-to-remove-class="nav-menu-open" data-show-if=".nav-menu-open">
+  <li><a href="#">Menu Item</a></li>
+  <li><a href="#">Menu Item</a></li>
+  <li><a href="#">Menu Item</a></li>
+</ul>
+```
 
 ## Learn
 
