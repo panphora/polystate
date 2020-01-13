@@ -66,34 +66,36 @@ import polystate from 'polystate';
 
 ## Learn More
 
-#### Set/unset a class when clicking on an element
+### Set/unset a class when clicking on an element
 
-* `data-click-to-add-class="className .selector(optional)"`
+* `data-click-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that mtach `selector` (only when the current element is clicked)
-* `data-click-to-remove-class="className .selector(optional)"`
+* `data-click-to-remove-class="className selector(optional)"`
   * Removes the `className` class from all elements that mtach `selector` (only when the current element is clicked)
-* `data-click-to-toggle-class="className .selector(optional)"`
+* `data-click-to-toggle-class="className selector(optional)"`
   * Toggles the `className` class on all elements that mtach `selector` (only when the current element is clicked)
 
-#### Set/unset a class when clicking *AWAY FROM* an element
+**Note:** If a `selector` isn't specified, Polystate will default to targeting the `<body>` element.
 
-* `data-click-away-to-add-class="className .selector(optional)"`
+### Set/unset a class when clicking *AWAY FROM* an element
+
+* `data-click-away-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that mtach `selector` (only when an element that's not the current element is clicked)
-* `data-click-away-to-remove-class="className .selector(optional)"`
+* `data-click-away-to-remove-class="className selector(optional)"`
   * Removes the `className` class from all elements that mtach `selector` (only when an element that's not the current element is clicked)
-* `data-click-away-to-toggle-class="className .selector(optional)"`
+* `data-click-away-to-toggle-class="className selector(optional)"`
   * Toggles the `className` class on all elements that mtach `selector` (only when an element that's not the current element is clicked)
 
 **Important:** A click away action will *NOT* trigger if there's a normal click action that affects the same `className` and `selector`
 
-#### Control visibility of elements
+### Control visibility of elements
 
 * `data-show-if="selector"`
   * shows element *ONLY* if it or any ancestor element matches the `selector`
 * `data-hide-if="selector"`
   * hides element if it or any ancestor element matches the `selector`
 
-**Note:** The visibility styles that make these attributes work are generated automatically as soon as `polystate` loads.
+**Note:** The visibility styles that make these attributes work are generated automatically as soon as Polystate loads.
 
 
 
