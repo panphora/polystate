@@ -10,7 +10,7 @@ Perfect for static sites & server-rendered apps.
 
 **From CDN:** Add the following script to the end of your `<head>` section.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/panphora/polystate@v0.5.0/dist/polystate.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/panphora/polystate@v0.6.0/dist/polystate.min.js" defer></script>
 ```
 
 That's it. It will initialize itself.
