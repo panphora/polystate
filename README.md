@@ -4,7 +4,7 @@
 
 Polystate lets you set and unset CSS classes on any element with a click.
 
-It's perfect for static sites that don't need a full front-end framework.
+Perfect for controlling state on simple server-rendered sites.
 
 ## Install
 
