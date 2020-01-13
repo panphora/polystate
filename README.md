@@ -102,9 +102,9 @@ These attributes make clicking AWAY from their element add/remove/toggle a class
 Polystate makes it really easy to hide and show elements based on the classes on the page.
 
 * `data-show-if="selector"`
-  * shows element *ONLY* if it or any ancestor element matches the `selector`
+  * shows element *ONLY* if it or any ancestor element matches the `selector`. hides it otherwise.
 * `data-hide-if="selector"`
-  * hides element if it or any ancestor element matches the `selector`
+  * hides element *ONLY* if it or any ancestor element matches the `selector`. shows it otherwise.
 
 **Notes** 
 
