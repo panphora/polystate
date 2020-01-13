@@ -67,7 +67,7 @@ Polystate lets you use a few simple attributes to control when clicking around t
 
 ### Set/unset a class when clicking on an element
 
-These attributes make clicking on their element add/remove/toggle a class on an element.
+These attributes make clicking on their element add/remove/toggle a class on any element.
 
 * `data-click-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that mtach `selector` (only when the current element is clicked)
@@ -84,7 +84,7 @@ These attributes make clicking on their element add/remove/toggle a class on an 
 
 ### Set/unset a class when clicking *AWAY FROM* an element
 
-These attributes make clicking AWAY from their element add/remove/toggle a class on an element.
+These attributes make clicking AWAY from their element add/remove/toggle a class on any element.
 
 * `data-click-away-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that mtach `selector` (only when an element that's not the current element is clicked)
@@ -99,7 +99,7 @@ These attributes make clicking AWAY from their element add/remove/toggle a class
 
 ### Control visibility of elements
 
-Polystate makes it really easy to hide and show elements based on the classes they and their ancestor elements have.
+Polystate makes it really easy to hide and show elements based on the classes on the page.
 
 * `data-show-if="selector"`
   * shows element *ONLY* if it or any ancestor element matches the `selector`
