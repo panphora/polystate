@@ -84,7 +84,7 @@ import polystate from 'polystate';
 * `data-click-away-to-toggle-class="className .selector(optional)"`
   * Toggles the `className` class on all elements that mtach `selector` (only when an element that's not the current element is clicked)
 
-*Important:* A click away action will *NOT* trigger if there's a normal click action that affects the same `className` and `selector`
+**Important:** A click away action will *NOT* trigger if there's a normal click action that affects the same `className` and `selector`
 
 #### Control visibility of elements
 
@@ -93,7 +93,7 @@ import polystate from 'polystate';
 * `data-hide-if="selector"`
   * hides element if it or any ancestor element matches the `selector`
 
-*Note:* The visibility styles that make these attributes work are generated automatically as soon as `polystate` loads.
+**Note:** The visibility styles that make these attributes work are generated automatically as soon as `polystate` loads.
 
 
 
