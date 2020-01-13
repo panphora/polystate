@@ -78,7 +78,7 @@ import polystate from 'polystate';
 **Notes:** 
 
 * If `selector` isn't specified, Polystate will default to targeting the `<body>` element.
-* `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selectors), or `[]` (for an attribute selector)
+* `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selector), or `[]` (for an attribute selector)
 
 ### Set/unset a class when clicking *AWAY FROM* an element
 
