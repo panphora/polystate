@@ -16,7 +16,7 @@ Add this `<script>` tag just before your closing `</body>` tag.
 <script src="https://cdn.jsdelivr.net/gh/panphora/polystate@v0.6.1/dist/polystate.min.js"></script>
 ```
 
-**Option 2: NPM Install** (Alternative) 
+**Option 2: NPM Install**
 
 ```js
 npm install polystate
