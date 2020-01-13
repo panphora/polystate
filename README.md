@@ -108,7 +108,7 @@ Polystate makes it really easy to hide and show elements based on the classes on
 
 **Notes** 
 
-* The styles that make these attributes work are generated automatically for you as soon as Polystate loads. This is why Polystate should be loaded after your page loads: so it knows which elements to generate styles for.
+* The styles that make these attributes work are generated automatically for you as soon as Polystate loads. This is why Polystate should be loaded after your page's elements are done loading (just before the closing `</body> tag). Otherwise, it won't know which elements to generate hide/show styles for.
 
 
 
