@@ -75,7 +75,10 @@ import polystate from 'polystate';
 * `data-click-to-toggle-class="className selector(optional)"`
   * Toggles the `className` class on all elements that mtach `selector` (only when the current element is clicked)
 
-**Note:** If a `selector` isn't specified, Polystate will default to targeting the `<body>` element.
+**Notes:** 
+
+* If `selector` isn't specified, Polystate will default to targeting the `<body>` element.
+* `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selectors), or `[]` (for an attribute selector)
 
 ### Set/unset a class when clicking *AWAY FROM* an element
 
