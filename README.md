@@ -64,9 +64,13 @@ import polystate from 'polystate';
 
 [View Nav Menu Demo](https://codepen.io/panphora/pen/GRgGpZx)
 
-## Learn More
+## The Attributes
+
+Polystate uses a few attributes to let you control when classes are added/removed/toggled on any element you choose -- when another element is clicked.
 
 ### Set/unset a class when clicking on an element
+
+These attributes make clicking on their element add/remove/toggle a class on an element.
 
 * `data-click-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that mtach `selector` (only when the current element is clicked)
@@ -82,6 +86,8 @@ import polystate from 'polystate';
 * `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selector), or `[]` (for an attribute selector)
 
 ### Set/unset a class when clicking *AWAY FROM* an element
+
+These attributes make clicking AWAY from their element add/remove/toggle a class on an element.
 
 * `data-click-away-to-add-class="className selector(optional)"`
   * Adds the `className` class to all elements that mtach `selector` (only when an element that's not the current element is clicked)
