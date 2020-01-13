@@ -63,7 +63,7 @@ import polystate from 'polystate';
 
 ## The Attributes
 
-Polystate uses a few attributes to let you control how clicking around the page will add/remove/toggle classes on various elements.
+Polystate lets you use a few simple attributes to control when clicking around the page will add/remove/toggle classes.
 
 ### Set/unset a class when clicking on an element
 
