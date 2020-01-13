@@ -1,25 +1,3 @@
-// <body>
-//   <button data-click-to-toggle-class="menu-open">toggle</button>
-//   <aside data-click-away-to-remove-class="menu-open" data-show-if=".menu-open">menu</aside>
-// </body>
-
-// data-click-to-add-class="className .selector(optional)"
-// data-click-away-to-add-class="className .selector(optional)"
-// data-click-to-remove-class="className .selector(optional)"
-// data-click-away-to-remove-class="className .selector(optional)"
-// data-click-to-toggle-class="className .selector(optional)"
-// data-click-away-to-toggle-class="className .selector(optional)"
-
-// data-hide-if=".menu-open" 
-  // hides element if it or any ancestor element has class "menu-open"
-// data-show-if=".menu-open"
-  // shows element ONLY if it or any ancestor element has class "menu-open"
-
-  // generate visibility styles automatically using JS
-
-// don't trigger click away actions if there's a click action affecting 
-//   the same class OR the same class and selector
-
 (function () {
   let clickSelectors = [
     "[data-click-to-add-class]",
@@ -151,7 +129,7 @@
 
   function getArgsFromString (str) {
     let args = str.split(" ");
-    
+
     if (args.length === 1) {
       args.push("body");
     }
