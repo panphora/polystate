@@ -96,6 +96,8 @@ import polystate from 'polystate';
 
 ### Control visibility of elements
 
+Polystate makes it really easy to hide and show elements based on the classes they and their ancestor elements have.
+
 * `data-show-if="selector"`
   * shows element *ONLY* if it or any ancestor element matches the `selector`
 * `data-hide-if="selector"`
@@ -103,7 +105,7 @@ import polystate from 'polystate';
 
 **Notes** 
 
-* The visibility styles that make these attributes work are generated automatically as soon as Polystate loads.
+* The styles that make these attributes work are generated automatically for you as soon as Polystate loads. This is why Polystate should be loaded after your page loads: so it knows which elements to generate styles for.
 
 
 
