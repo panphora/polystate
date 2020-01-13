@@ -91,7 +91,7 @@ import polystate from 'polystate';
 
 **Important** 
 
-* A click away action will *NOT* trigger if there's a normal click action that affects the same `className` and `selector`
+* A click away action will *NOT* trigger if the current click event also triggers a normal click action targeting the same `className` and `selector`
 
 ### Control visibility of elements
 
