@@ -130,7 +130,9 @@ h1 {
 .tab-content {
   margin-top: 1rem;
   padding: 1rem;
+  color: #9c36b5;
   background-color: #f3d9fa;
+  border-radius: 5px;
 }
 
 .nav-menu {
@@ -141,7 +143,7 @@ h1 {
   position: absolute;
   top: 2.75rem;
   left: 0;
-  padding: 1rem;
+  padding: 1rem 2.5rem 1rem 1rem;
   color: #fff;
   background-color: #364fc7;
   border-radius: 5px;
