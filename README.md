@@ -2,9 +2,9 @@
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/polystate)
 
-Polystate lets you set and unset CSS classes on any element with a click.
+Set and unset CSS classes on any element with a click.
 
-Perfect for controlling state on simple server-rendered sites.
+Perfect for simple websites.
 
 ## Install
 
