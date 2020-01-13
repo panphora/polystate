@@ -1,7 +1,7 @@
 {
   "main": "dist/polystate.min.js",
   "name": "polystate",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/panphora/polystate.git"
