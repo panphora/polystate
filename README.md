@@ -37,7 +37,7 @@ import polystate from 'polystate';
 <aside data-click-away-to-remove-class="sidebar-open" data-show-if=".sidebar-open">sidebar content</aside>
 ```
 
-[View Demo]()
+[View Sidebar Demo](https://codepen.io/panphora/pen/ZEYRbbE)
 
 *Tabs*
 ```html
@@ -49,6 +49,8 @@ import polystate from 'polystate';
 <div data-show-if=".tab-3-active">Content for the third tab.</div>
 ```
 
+[View Tabs Demo](https://codepen.io/panphora/pen/RwNJWWx)
+
 *Nav Menu*
 ```html
 <button data-click-to-toggle-class="nav-menu-open">Toggle Menu</button>
@@ -58,6 +60,8 @@ import polystate from 'polystate';
   <li><a href="#">Menu Item</a></li>
 </ul>
 ```
+
+[View Nav Menu Demo](https://codepen.io/panphora/pen/GRgGpZx)
 
 ## Learn
 
