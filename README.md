@@ -8,7 +8,7 @@ Perfect for simple websites.
 
 ## Install
 
-**Load from CDN:** 
+**Option 1: Script Tag** 
 
 Add this `<script>` tag just before your closing `</body>` tag.
 
@@ -16,15 +16,12 @@ Add this `<script>` tag just before your closing `</body>` tag.
 <script src="https://cdn.jsdelivr.net/gh/panphora/polystate@v0.6.1/dist/polystate.min.js"></script>
 ```
 
-You can start using it right away!
-
-**Install from NPM:** (Alternative) 
+**Option 2: NPM Install** (Alternative) 
 
 ```js
-npm i polystate
+npm install polystate
 ```
 
-Include it in your script.
 ```js
 import polystate from 'polystate';
 ```
