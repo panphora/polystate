@@ -77,7 +77,7 @@ import polystate from 'polystate';
 
 **Notes** 
 
-* If `selector` isn't specified, Polystate will default to targeting the `<body>` element.
+* If `selector` is not specified, Polystate will default to targeting the `<body>` element.
 * You can set/unset multiple classes with a single attribute by using the following syntax: `data-click-to-remove-class="[className1,className2] [selector1,selector2](optional)"`
 * `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selector), or `[]` (for an attribute selector)
 
