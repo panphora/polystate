@@ -61,6 +61,23 @@ import polystate from 'polystate';
 
 *Demo:* [Nav Menu on Codepen](https://codepen.io/panphora/pen/GRgGpZx)
 
+#### Everything at once
+```html
+<button data-click-to-toggle-class="sidebar-open">data-click-to-toggle-class="sidebar-open"</button>
+<div data-show-if=".sidebar-open">data-show-if=".sidebar-open"</div>
+<div data-hide-if=".sidebar-open">data-hide-if=".sidebar-open"</div>
+<button data-click-to-add-class="menu-open">data-click-to-add-class="menu-open"</button>
+<button data-click-away-to-remove-class="menu-open">data-click-away-to-remove-class="menu-open"</button>
+<div data-show-if=".menu-open">data-show-if=".menu-open"</div>
+<div data-hide-if=".menu-open">data-hide-if=".menu-open"</div>
+<button data-click-to-toggle-class="[hello1,hello2,hello3]">data-click-to-toggle-class="[hello1, hello2, hello3]"</button>
+<button data-click-away-to-toggle-class="[hello1,hello2,hello3]">data-click-away-to-toggle-class="[hello1, hello2, hello3]"</button>
+<div data-show-if=".hello1">data-show-if=".hello1"</div>
+<div data-hide-if=".hello1">data-hide-if=".hello1"</div>
+```
+
+*Demo:* [Kitchen Sink on Codepen](https://codepen.io/panphora/pen/PowaKpY)
+
 ## The Attributes
 
 Polystate lets you use a few simple attributes to control when clicking around the page will add/remove/toggle classes.
@@ -79,7 +96,7 @@ These attributes make clicking on their element add/remove/toggle a class on any
 **Notes** 
 
 * If `selector` is not specified, Polystate will default to targeting the `<body>` element.
-* You can set/unset multiple classes with a single attribute by using the following syntax: `data-click-to-remove-class="[className1,className2] [selector1,selector2](optional)"`
+* You can set/unset multiple classes with a single attribute by using the following syntax with braces: `data-click-to-remove-class="[className1,className2] [selector1,selector2](optional)"`. The arguments inside the brances can *NOT* have spaces between them.
 * `selector` isn't assumed to be a class, so it must include either a `.` (for a class selector), `#` (for an ID selector), or `[]` (for an attribute selector)
 
 ### Set/unset a class when clicking *AWAY FROM* an element

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Polystate demo</title>
   <meta name="description" content="Polystate demo">
-  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="demo.css?v=2">
 </head>
 <body class="tab-1-active">
   <h1>Polystate Demos</h1>
@@ -58,6 +58,40 @@
       </div>
     </div>
   </div>
-  <script src="../src/polystate.js"></script>
+  <div class="demo">
+    <div class="demo__header-label">Demo 4</div>
+    <h2 class="demo__header">Kitchen Sink</h2>
+    <div class="demo__area demo__area--long">
+      <div class="demo__container">
+        <div>
+          <h4>Classes on body:</h4>
+          <div class="classes-on-body"></div>
+        </div>
+        <button data-click-to-toggle-class="sidebar-open">data-click-to-toggle-class="sidebar-open"</button>
+        <div data-show-if=".sidebar-open" class="show-if-box alt">data-show-if=".sidebar-open"</div>
+        <div data-hide-if=".sidebar-open" class="show-if-box">data-hide-if=".sidebar-open"</div>
+        <button data-click-to-add-class="menu-open">data-click-to-add-class="menu-open"</button>
+        <button data-click-away-to-remove-class="menu-open">data-click-away-to-remove-class="menu-open"</button>
+        <div data-show-if=".menu-open" class="show-if-box alt">data-show-if=".menu-open"</div>
+        <div data-hide-if=".menu-open" class="show-if-box">data-hide-if=".menu-open"</div>
+        <button data-click-to-toggle-class="[hello1,hello2,hello3]">data-click-to-toggle-class="[hello1, hello2, hello3]"</button>
+        <button data-click-away-to-toggle-class="[hello1,hello2,hello3]">data-click-away-to-toggle-class="[hello1, hello2, hello3]"</button>
+        <div data-show-if=".hello1" class="show-if-box alt">data-show-if=".hello1"</div>
+        <div data-hide-if=".hello1" class="show-if-box">data-hide-if=".hello1"</div>
+      </div>
+    </div>
+  </div>
+  <script src="../src/polystate.js?v=2"></script>
+  <script>
+    showClassesOnBody();
+    document.body.addEventListener("click", event => {
+      setTimeout(() => {
+        showClassesOnBody();
+      }, 0);
+    });
+    function showClassesOnBody () {
+      document.querySelector(".classes-on-body").innerHTML = Array.from(document.body.classList).map(c => "<div class='class-tag'>" + c + "</div>").join("");
+    }
+  </script>
 </body>
 </html>

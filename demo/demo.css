@@ -88,6 +88,10 @@ h1 {
   background-color: #ced4da;
 }
 
+.demo__area--long {
+  height: 700px;
+}
+
 .demo__container {
   position: relative;
   max-width: 600px;
@@ -95,6 +99,10 @@ h1 {
   margin: 0 auto;
   padding: 1.5rem;
   background-color: #f1f3f5;
+}
+
+.demo__container button + button {
+  margin-top: .5rem;
 }
 
 .sidebar {
@@ -157,8 +165,32 @@ h1 {
   color: #dbe4ff;
 }
 
+.classes-on-body {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: #ced4da;
+}
 
+.class-tag {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 3px 8px 4px;
+  border-radius: 4px;
+}
 
+.show-if-box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: #7950f2;
+}
+
+.show-if-box.alt {
+  background-color: #1098ad;
+}
 
 
 
