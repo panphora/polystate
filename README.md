@@ -2,6 +2,8 @@
 
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/polystate)
 
+![Image of Yaktocat](https://websharebox.s3.amazonaws.com/wedding-album-cover-vector.svg)
+
 Set and unset CSS classes on any element with a click.
 
 Perfect for simple websites.
